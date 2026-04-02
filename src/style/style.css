@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+
+    --color-primary: #ffffff;
+    --color-secondary: #eef0f3;
+    --color-muted: #e8e9ed;
+
+    --color-low: #8e939d;
+    --color-medium: #dd8931;
+    --color-heigh: #cb3c3b;
+
+    --color-backlog: #3e66d7;
+    --color-inProgress: #dd882e;
+    --color-review: #904abf;
+    --color-done: #459a75;
+
+    --color-bg: #f5f6f8;
+    
+    --color-primary-text: #000000;
+    --color-muted-text: #9ea2aa;
+    
+    --color-primary-border: #ebecf0;
+
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../assets/font/RobotoMono.woff2");
+    font-display: swap;
+}
+
+@layer base {
+    
+    *::-webkit-scrollbar{
+        color: #459a75;
+      border-radius: 0vw;
+      width: 10px;
+    }
+    *::-webkit-scrollbar-corner,
+    *::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+    *::-webkit-scrollbar-thumb,
+    *::-webkit-scrollbar-thumb {
+      background-color: var(--color-muted);
+      border-radius: 0vw;
+    }
+    *::-webkit-scrollbar-thumb:hover,
+    *::-webkit-scrollbar-thumb:hover {
+      border-radius: 1vw;
+    }
+    
+    html,body {
+      background-color: var(--color-bg);
+    }
+    body {
+      width: 1920px;
+      margin: auto;
+      position: relative;
+      top: 0px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "roboto";
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    h6{
+        font-size: 12px;
+    }
+    span, p, a, li, div, section, input, button,
+    textarea, label, select, option, th, td, aside,
+    footer, header, nav, article {
+        font-family: "roboto";
+        font-size: 16px;
+    }
+
+    .dark{
+        --color-primary: #ffffff;
+        --color-secondary: #eef0f3;
+        --color-muted: #e8e9ed;
+
+        --color-low: #8e939d;
+        --color-medium: #dd8931;
+        --color-heigh: #cb3c3b;
+
+        --color-backlog: #3e66d7;
+        --color-inProgress: #dd882e;
+        --color-review: #904abf;
+        --color-done: #459a75;
+
+        --color-bg: #f5f6f8;
+        
+        --color-primary-text: #000000;
+        --color-muted-text: #9ea2aa;
+        
+        --color-primary-border: #ebecf0;
+    }
+}
