@@ -4,9 +4,10 @@
 
 @theme {
 
-    --color-primary: #ffffff;
+    --color-primary: #3e66d7;
     --color-secondary: #eef0f3;
     --color-muted: #e8e9ed;
+    --color-accent : #ffffff;
 
     --color-low: #8e939d;
     --color-medium: #dd8931;
@@ -66,7 +67,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: "roboto";
+        font-family: "roboto, sans-serif";
     }
     h1{
         font-size: 36px;
@@ -74,6 +75,7 @@
     }
     h2{
         font-size: 24px;
+        font-weight: 600;
     }
     h3{
         font-size: 18px;
@@ -90,7 +92,7 @@
     span, p, a, li, div, section, input, button,
     textarea, label, select, option, th, td, aside,
     footer, header, nav, article {
-        font-family: "roboto";
+        font-family: "roboto, sans-serif";
         font-size: 16px;
     }
 
