@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { memo, useCallback, useEffect } from 'react'
 import { Alert, Box, Button, CircularProgress, Stack, Typography } from '@mui/material'
 import { Plus } from 'lucide-react'
 import Task from './task'
@@ -8,10 +8,11 @@ import toast from 'react-hot-toast'
 // import { deleteTask } from '../../features/tasks/api/deleteTask'
 
 
-function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSuccess=false,isError=false,error={}, isLoading=false, isFetching=false, itemsCount = 0, title = "", status = "done",className="" }) {
+function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSuccess=false,isError=false,error={}, isLoading=false, isFetching=false, itemsCount = 0, title = "", status = "backlog",className="" }) {
     
   //$open add form
   //$dnd
+  console.log(status);
 
   const { isError: deleteItemError, isSuccess: deleteItemSuccess, mutate: deleteTask } = useDeleteTask();
   
@@ -23,8 +24,8 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
     }
   },[deleteItemSuccess,deleteItemError])
 
-  const handleDeleteTask = useCallback((id) => {
-    deleteTask({ id });
+  const handleDeleteTask = useCallback((id,status) => {
+    deleteTask({ id,status });
   }, [deleteTask]);
 
   const handleEditTask = useCallback(() => {
@@ -46,7 +47,7 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
         <div className='rounded-full bg-muted w-[20px] h-[20px] flex justify-center items-center text-[12px]'>{ itemsCount }</div>
       </Box>
       <Stack onScroll={fetchOnScrollDown} className="max-h-[850px] overflow-y-scroll gap-2 px-1">
-        { tasks?.map((task,index) => <Task key={index} id={task.id} title={ task.title } description={ task.description } priority={ task.priority} priorityTitle={task.priority} onDelete={handleDeleteTask} onEdit={handleEditTask}/>)}
+        { tasks?.map((task,index) => <Task key={index} status={status} id={task.id} title={ task.title } description={ task.description } priority={ task.priority} priorityTitle={task.priority} onDelete={handleDeleteTask} onEdit={handleEditTask}/>)}
       </Stack>
       { (isLoading || isFetching) && <CircularProgress enableTrackSlot size={ 40 } className='m-auto' /> }
       { isError && <Alert variant="filled" severity="error"> { error.message } </Alert> }
@@ -55,4 +56,4 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
   )
 }
 
-export default StatusColumn
+export default memo(StatusColumn);

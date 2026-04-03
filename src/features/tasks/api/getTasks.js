@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getTasks = async ({ pageParam = 1, queryKey }) => {
-    const [, column, limit] = queryKey;
+    const [,column, limit] = queryKey;
     try {      
         const res = await axios.get("http://localhost:3000/tasks", {
             params: {

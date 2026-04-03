@@ -22,13 +22,6 @@
       "priority": "low"
     },
     {
-      "id": 5,
-      "title": "Design homepage",
-      "description": "Include hero section",
-      "column": "inProgress",
-      "priority": "heigh"
-    },
-    {
       "id": 6,
       "title": "3Design homepage",
       "description": "Include hero section",
