@@ -5,7 +5,7 @@
       "title": "1Design homepage",
       "description": "Include hero section",
       "column": "backlog",
-      "priority": "heigh"
+      "priority": "high"
     },
     {
       "id": 2,
@@ -33,7 +33,7 @@
       "title": "4Design homepage",
       "description": "Include hero section",
       "column": "backlog",
-      "priority": "heigh"
+      "priority": "high"
     },
     {
       "id": 8,

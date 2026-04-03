@@ -4,12 +4,13 @@ import { Box, Grid } from '@mui/material'
 import useGetTasks from '../../hook/useGetTasks';
 import constValues from '../../data/constValues';
 
-function ToDoBoard() {
+function ToDoBoard({searchQuery}) {
+//$get search parameter from url
 
-    const { data: backlogData, dataList: backlogList, fetchNextPage: backlogFetchNextPage, hasNextPage: backlogHasNextPage, isFetchingNextPage: backlogIsFetchingNextPage, error: backlogError, isError: backlogIsError, isLoading: backlogIsLoading, isSuccess:backlogIsSuccess} = useGetTasks({column:constValues.columns.backlog, limit: constValues.columnsLoadLimit });
-    const { data: inProgressData, dataList: inProgressList, fetchNextPage: inProgressFetchNextPage, hasNextPage: inProgressHasNextPage, isFetchingNextPage: inProgressIsFetchingNextPage, error: inProgressError, isError: inProgressIsError, isLoading: inProgressIsLoading, isSuccess:inProgressIsSuccess} = useGetTasks({column:constValues.columns.inProgress, limit: constValues.columnsLoadLimit });
-    const { data: reviewData, dataList: reviewList, fetchNextPage: reviewFetchNextPage, hasNextPage: reviewHasNextPage, isFetchingNextPage: reviewIsFetchingNextPage, error: reviewError, isError: reviewIsError, isLoading: reviewIsLoading, isSuccess:reviewIsSuccess} = useGetTasks({column:constValues.columns.review, limit: constValues.columnsLoadLimit });
-    const { data: doneData, dataList: doneList, fetchNextPage: doneFetchNextPage, hasNextPage: doneHasNextPage, isFetchingNextPage: doneIsFetchingNextPage, error: doneError, isError: doneIsError, isLoading: doneIsLoading, isSuccess:doneIsSuccess} = useGetTasks({column:constValues.columns.done, limit: constValues.columnsLoadLimit });
+    const { data: backlogData, dataList: backlogList, fetchNextPage: backlogFetchNextPage, hasNextPage: backlogHasNextPage, isFetchingNextPage: backlogIsFetchingNextPage, error: backlogError, isError: backlogIsError, isLoading: backlogIsLoading, isSuccess:backlogIsSuccess} = useGetTasks({column:constValues.columns.backlog, limit: constValues.columnsLoadLimit, searchQuery });
+    const { data: inProgressData, dataList: inProgressList, fetchNextPage: inProgressFetchNextPage, hasNextPage: inProgressHasNextPage, isFetchingNextPage: inProgressIsFetchingNextPage, error: inProgressError, isError: inProgressIsError, isLoading: inProgressIsLoading, isSuccess:inProgressIsSuccess} = useGetTasks({column:constValues.columns.inProgress, limit: constValues.columnsLoadLimit, searchQuery });
+    const { data: reviewData, dataList: reviewList, fetchNextPage: reviewFetchNextPage, hasNextPage: reviewHasNextPage, isFetchingNextPage: reviewIsFetchingNextPage, error: reviewError, isError: reviewIsError, isLoading: reviewIsLoading, isSuccess:reviewIsSuccess} = useGetTasks({column:constValues.columns.review, limit: constValues.columnsLoadLimit, searchQuery });
+    const { data: doneData, dataList: doneList, fetchNextPage: doneFetchNextPage, hasNextPage: doneHasNextPage, isFetchingNextPage: doneIsFetchingNextPage, error: doneError, isError: doneIsError, isLoading: doneIsLoading, isSuccess:doneIsSuccess} = useGetTasks({column:constValues.columns.done, limit: constValues.columnsLoadLimit, searchQuery });
    
     // console.log(backlogList, inProgressList, reviewList, doneList);
 

@@ -8,7 +8,7 @@ const priorityBadgeVariants = cva(
   {
     variants: {
       variant: {
-        heigh: "bg-high/30 text-high",
+        high: "bg-high/30 text-high",
         medium: "bg-medium/30 text-medium",
         low: "bg-low/30 text-low",
       }
