@@ -1,13 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "title": "1Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "high"
-    },
-    {
       "id": 2,
       "title": "2Design homepage",
       "description": "Include hero section",
@@ -27,13 +20,6 @@
       "description": "Include hero section",
       "column": "backlog",
       "priority": "low"
-    },
-    {
-      "id": 7,
-      "title": "4Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "high"
     },
     {
       "id": 8,
@@ -57,28 +43,7 @@
       "priority": "low"
     },
     {
-      "id": 11,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
-      "id": 12,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
       "id": 13,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
-      "id": 14,
       "title": "3Design homepage",
       "description": "Include hero section",
       "column": "backlog",
@@ -88,8 +53,8 @@
       "id": 15,
       "title": "3Design homepage",
       "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
+      "column": "done",
+      "priority": "medium"
     },
     {
       "id": 16,
@@ -118,6 +83,34 @@
       "description": "Include hero section",
       "column": "review",
       "priority": "low"
+    },
+    {
+      "title": "dsfdsf",
+      "description": "",
+      "priority": "low",
+      "column": "review",
+      "id": 23
+    },
+    {
+      "title": "asd",
+      "description": "dasd",
+      "priority": "high",
+      "column": "review",
+      "id": 24
+    },
+    {
+      "title": "asd",
+      "description": "dasd",
+      "priority": "low",
+      "column": "done",
+      "id": 26
+    },
+    {
+      "title": "dsa",
+      "description": "dasdas",
+      "priority": "low",
+      "column": "done",
+      "id": 27
     }
   ]
 }

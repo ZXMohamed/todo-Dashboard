@@ -5,6 +5,7 @@ import Task from './task'
 import clsx from 'clsx'
 import useDeleteTask from '../../hook/useDeleteTask'
 import toast from 'react-hot-toast'
+import useFormsState from '../../hook/useFormsState'
 // import { deleteTask } from '../../features/tasks/api/deleteTask'
 
 
@@ -14,23 +15,31 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
   //$dnd
   console.log(status);
 
+  const {openEditForm,openCreateForm}= useFormsState();
+
   const { isError: deleteItemError, isSuccess: deleteItemSuccess, mutate: deleteTask } = useDeleteTask();
   
-  useEffect(()=>{
-    if(deleteItemSuccess){
+  useEffect(() => {
+    if (deleteItemSuccess) {
       toast.success("Task deleted successfully");
-    }else if(deleteItemError){
+    } else if (deleteItemError) {
       toast.error("Failed to delete task");
     }
-  },[deleteItemSuccess,deleteItemError])
+  }, [deleteItemSuccess, deleteItemError]);
 
   const handleDeleteTask = useCallback((id,status) => {
     deleteTask({ id,status });
   }, [deleteTask]);
 
-  const handleEditTask = useCallback(() => {
+  const handleEditTask = useCallback((id,data,status) => {
+    openEditForm(true, { id, data, status });
+    window.scrollTo(0,0);
+  }, [openEditForm]);
 
-  }, []);
+  const handleCreateTask = () => { 
+      openCreateForm(true, status);
+      window.scrollTo(0,0);
+  }
   
   const fetchOnScrollDown = (e) => {
     const reachDown = (e.target.scrollHeight - e.target.clientHeight - e.target.scrollTop) < 5;
@@ -51,7 +60,7 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
       </Stack>
       { (isLoading || isFetching) && <CircularProgress enableTrackSlot size={ 40 } className='m-auto' /> }
       { isError && <Alert variant="filled" severity="error"> { error.message } </Alert> }
-      { isSuccess && <Button variant='outlined' color='primary' className='capitalize!' ><Plus /> Add task</Button> }
+      { isSuccess && <Button variant='outlined' color='primary' onClick={ handleCreateTask } className='capitalize!' ><Plus /> Add task</Button> }
     </Stack>
   )
 }

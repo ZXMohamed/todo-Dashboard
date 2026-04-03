@@ -1,10 +1,14 @@
 import React from 'react'
 import ToDoBoard from '../components/section/toDoBoard'
+import Forms from '../components/section/forms'
 
 
 function Home() {
-    return (
-        <ToDoBoard/>
+  return (
+    <>
+      <Forms/>
+      <ToDoBoard/>
+    </>
   )
 }
 

@@ -1,17 +1,17 @@
 import React from 'react'
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { deleteTask } from '../features/tasks/api/deleteTask';
+import { createTask } from '../features/tasks/api/createTask';
 
-function useDeleteTask() {
+function useCreateTask() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: deleteTask,
-    onSuccess: (data,variables) => {console.log(variables.id,variables.status);
+    mutationFn: createTask,
+    onSuccess: (data,variables) => {
       queryClient.invalidateQueries({ queryKey: ['tasks',variables.status] });
     },
   });
   
 }
 
-export default useDeleteTask
+export default useCreateTask
