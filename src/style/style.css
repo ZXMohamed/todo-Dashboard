@@ -11,7 +11,7 @@
 
     --color-low: #8e939d;
     --color-medium: #dd8931;
-    --color-heigh: #cb3c3b;
+    --color-high: #cb3c3b;
 
     --color-backlog: #3e66d7;
     --color-inProgress: #dd882e;
@@ -34,7 +34,12 @@
 }
 
 @layer base {
-    
+    :root{
+        --color-backlog: #3e66d7;
+        --color-inProgress: #dd882e;
+        --color-review: #904abf;
+        --color-done: #459a75;
+    }
     *::-webkit-scrollbar{
         color: #459a75;
       border-radius: 0vw;
@@ -103,7 +108,7 @@
 
         --color-low: #8e939d;
         --color-medium: #dd8931;
-        --color-heigh: #cb3c3b;
+        --color-high: #cb3c3b;
 
         --color-backlog: #3e66d7;
         --color-inProgress: #dd882e;

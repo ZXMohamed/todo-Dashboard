@@ -22,7 +22,7 @@ function CreateForm() {
                 <MenuItem value="">Select priority</MenuItem>
                 <MenuItem value="low" className='bg-low/50!'>Low</MenuItem>
                 <MenuItem value="medium" className='bg-medium/50!'>Medium</MenuItem>
-                <MenuItem value="high" className='bg-heigh/50!'>High</MenuItem>
+                <MenuItem value="high" className='bg-high/50!'>High</MenuItem>
             </TextField>
 
             <Button type="submit" variant="contained">Create</Button>

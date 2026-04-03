@@ -28,7 +28,7 @@ function EditForm({ id="", title = "5555", description = "dasdasd", priority = "
             <TextField select label="Priority" defaultValue={priority} {...register("priority", { required: "Priority is required" })} error={!!errors.priority} helperText={errors.priority?.message}>
                 <MenuItem value="low" className='bg-low/50!'>Low</MenuItem>
                 <MenuItem value="medium" className='bg-medium/50!'>Medium</MenuItem>
-                <MenuItem value="high" className='bg-heigh/50!'>High</MenuItem>
+                <MenuItem value="high" className='bg-high/50!'>High</MenuItem>
             </TextField>
 
             <Button type="submit" variant="contained">Edit</Button>
