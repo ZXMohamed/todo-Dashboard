@@ -1,95 +1,130 @@
-{ 
-    "tasks": [
-        {
-            "id": 1,
-            "title": "1Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "heigh"
-        },
-        {
-            "id": 2,
-            "title": "2Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 3,
-            "title": "Design homepage",
-            "description": "Include hero section",
-            "column": "review",
-            "priority": "medium"
-        },
-        {
-            "id": 4,
-            "title": "Design homepage",
-            "description": "Include hero section",
-            "column": "done",
-            "priority": "low"
-        },
-        {
-            "id": 5,
-            "title": "Design homepage",
-            "description": "Include hero section",
-            "column": "inProgress",
-            "priority": "heigh"
-        },
-        {
-            "id": 6,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 7,
-            "title": "4Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "heigh"
-        },
-        {
-            "id": 8,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 9,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 10,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 11,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 12,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        },
-        {
-            "id": 13,
-            "title": "3Design homepage",
-            "description": "Include hero section",
-            "column": "backlog",
-            "priority": "low"
-        }
-    ]
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "1Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "heigh"
+    },
+    {
+      "id": 2,
+      "title": "2Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 4,
+      "title": "Design homepage",
+      "description": "Include hero section",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 5,
+      "title": "Design homepage",
+      "description": "Include hero section",
+      "column": "inProgress",
+      "priority": "heigh"
+    },
+    {
+      "id": 6,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 7,
+      "title": "4Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "heigh"
+    },
+    {
+      "id": 8,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 9,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 10,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 11,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 12,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 13,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 14,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 15,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 16,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 17,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 18,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 19,
+      "title": "3Design homepage",
+      "description": "Include hero section",
+      "column": "review",
+      "priority": "low"
+    }
+  ]
 }
