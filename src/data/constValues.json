@@ -5,5 +5,10 @@
         "review":"review",
         "done":"done"
     },
-    "columnsLoadLimit":10
+    "columnsLoadLimit":10,
+    "priority":{
+        "low":"low",
+        "medium":"medium",
+        "high":"high"
+    }
 }

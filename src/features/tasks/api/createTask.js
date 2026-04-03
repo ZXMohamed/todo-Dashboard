@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const deleteTask = async ({ id }) => {
+export const createTask = async ({data, status}) => {console.log(data)
     try {
-        const res = await axios.delete(`http://localhost:3000/tasks/${id}`);
+        const res = await axios.post(`http://localhost:3000/tasks/`, data);
         return {
             data: res.data,
         }

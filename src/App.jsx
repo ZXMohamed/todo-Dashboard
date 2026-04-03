@@ -3,6 +3,7 @@ import EditForm from "./components/section/editForm"
 import { Toaster } from "react-hot-toast"
 import Navbar from "./components/section/navbar"
 import Home from "./pages/home"
+import Forms from "./components/section/forms"
 
 function App() {
 
@@ -10,8 +11,8 @@ function App() {
     <>
       <Toaster/>
       <Navbar />
-      <CreateForm />
-      <EditForm/>
+      <Forms/>
+      <Toaster/>
       <Home/>
     </>
   )

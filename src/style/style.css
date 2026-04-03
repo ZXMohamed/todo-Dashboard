@@ -61,6 +61,7 @@
     
     html,body {
       background-color: var(--color-bg);
+      scroll-behavior: smooth;
     }
     body {
       width: 1920px;

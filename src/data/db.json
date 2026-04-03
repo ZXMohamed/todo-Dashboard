@@ -97,6 +97,34 @@
       "description": "Include hero section",
       "column": "review",
       "priority": "low"
+    },
+    {
+      "title": "asd",
+      "description": "dasd",
+      "priority": "medium",
+      "column": "backlog",
+      "id": 22
+    },
+    {
+      "title": "dsfdsf",
+      "description": "",
+      "priority": "low",
+      "column": "inProgress",
+      "id": 23
+    },
+    {
+      "title": "asd",
+      "description": "dasd",
+      "priority": "medium",
+      "column": "review",
+      "id": 24
+    },
+    {
+      "title": "asd",
+      "description": "dasd",
+      "priority": "low",
+      "column": "done",
+      "id": 26
     }
   ]
 }

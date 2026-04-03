@@ -4,7 +4,7 @@ import ToDoBoard from '../components/section/toDoBoard'
 
 function Home() {
     return (
-        <ToDoBoard/>
+      <ToDoBoard/>
   )
 }
 
