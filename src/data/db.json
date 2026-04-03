@@ -1,0 +1,704 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design login page",
+      "description": "Create UI for login screen",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 2,
+      "title": "Build auth API",
+      "description": "JWT authentication setup",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "Fix navbar bug",
+      "description": "Dropdown not closing",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 4,
+      "title": "Create dashboard layout",
+      "description": "Sidebar and header",
+      "column": "done",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Setup Redux store",
+      "description": "Global state management",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "title": "Implement drag and drop",
+      "description": "Using dnd-kit",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 7,
+      "title": "Add loading spinner",
+      "description": "Reusable component",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 8,
+      "title": "Optimize images",
+      "description": "Reduce size and lazy load",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 9,
+      "title": "Create profile page",
+      "description": "User info UI",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 10,
+      "title": "Fix form validation",
+      "description": "Email regex issue",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 11,
+      "title": "Add dark mode",
+      "description": "Toggle theme support",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 12,
+      "title": "Setup routing",
+      "description": "React Router config",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "title": "Create footer",
+      "description": "Links and copyright",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 14,
+      "title": "Fix mobile layout",
+      "description": "Responsive issues",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 15,
+      "title": "Add notifications",
+      "description": "Toast messages",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 16,
+      "title": "Refactor components",
+      "description": "Clean code structure",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 17,
+      "title": "Integrate API",
+      "description": "Fetch user data",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 18,
+      "title": "Add search feature",
+      "description": "Filter tasks",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 19,
+      "title": "Fix console errors",
+      "description": "Clean warnings",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 20,
+      "title": "Setup environment variables",
+      "description": "API keys",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 21,
+      "title": "Create settings page",
+      "description": "User preferences",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 22,
+      "title": "Add avatar upload",
+      "description": "Image upload feature",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 23,
+      "title": "Fix header alignment",
+      "description": "CSS issue",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 24,
+      "title": "Add pagination",
+      "description": "List navigation",
+      "column": "done",
+      "priority": "medium"
+    },
+    {
+      "id": 25,
+      "title": "Implement caching",
+      "description": "Improve performance",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 26,
+      "title": "Create modal component",
+      "description": "Reusable popup",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 27,
+      "title": "Fix button styles",
+      "description": "Hover states",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 28,
+      "title": "Add breadcrumbs",
+      "description": "Navigation aid",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 29,
+      "title": "Setup CI/CD",
+      "description": "Auto deployment",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 30,
+      "title": "Improve accessibility",
+      "description": "ARIA labels",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 31,
+      "title": "Fix scroll issue",
+      "description": "Page jump bug",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 32,
+      "title": "Add tooltips",
+      "description": "UI hints",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 33,
+      "title": "Create analytics page",
+      "description": "Charts and stats",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 34,
+      "title": "Integrate charts library",
+      "description": "Recharts setup",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 35,
+      "title": "Fix API error handling",
+      "description": "Better messages",
+      "column": "review",
+      "priority": "high"
+    },
+    {
+      "id": 36,
+      "title": "Add logout feature",
+      "description": "Clear session",
+      "column": "done",
+      "priority": "medium"
+    },
+    {
+      "id": 37,
+      "title": "Optimize bundle size",
+      "description": "Code splitting",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 38,
+      "title": "Create help page",
+      "description": "FAQ section",
+      "column": "inProgress",
+      "priority": "low"
+    },
+    {
+      "id": 39,
+      "title": "Fix typo issues",
+      "description": "Text corrections",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 40,
+      "title": "Add keyboard shortcuts",
+      "description": "Improve UX",
+      "column": "done",
+      "priority": "medium"
+    },
+    {
+      "id": 41,
+      "title": "Create onboarding plan",
+      "description": "First-time user guide",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 42,
+      "title": "Add email notifications",
+      "description": "Backend trigger",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 43,
+      "title": "Fix login redirect",
+      "description": "Routing bug",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 44,
+      "title": "Add error boundary",
+      "description": "React fallback UI",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 45,
+      "title": "Improve SEO",
+      "description": "Meta tags",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 46,
+      "title": "Add comments feature",
+      "description": "User feedback",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 47,
+      "title": "Fix animation glitch",
+      "description": "CSS transition bug",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 48,
+      "title": "Add skeleton loader",
+      "description": "Loading state UI",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 49,
+      "title": "Implement filters",
+      "description": "Task filtering",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 50,
+      "title": "Add export feature",
+      "description": "Download data",
+      "column": "inProgress",
+      "priority": "low"
+    },
+    {
+      "id": 51,
+      "title": "Fix date picker",
+      "description": "Incorrect format",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 52,
+      "title": "Add import feature",
+      "description": "Upload JSON",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 53,
+      "title": "Create admin panel",
+      "description": "Manage users",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 54,
+      "title": "Add role permissions",
+      "description": "Access control",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 55,
+      "title": "Fix dropdown issue",
+      "description": "Not closing",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 56,
+      "title": "Improve logging",
+      "description": "Better debug info",
+      "column": "done",
+      "priority": "medium"
+    },
+    {
+      "id": 57,
+      "title": "Add tags system",
+      "description": "Categorize tasks",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 58,
+      "title": "Fix API timeout",
+      "description": "Retry logic",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 59,
+      "title": "Add multi-language",
+      "description": "i18n support",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 60,
+      "title": "Update dependencies",
+      "description": "Latest versions",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 61,
+      "title": "Create reports page",
+      "description": "User stats",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 62,
+      "title": "Add audit logs",
+      "description": "Track actions",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 63,
+      "title": "Fix caching bug",
+      "description": "Stale data",
+      "column": "review",
+      "priority": "high"
+    },
+    {
+      "id": 64,
+      "title": "Improve UI spacing",
+      "description": "Better layout",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 65,
+      "title": "Add file upload",
+      "description": "Drag and drop",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 66,
+      "title": "Fix scroll lag",
+      "description": "Performance issue",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 67,
+      "title": "Add reminders",
+      "description": "Task alerts",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 68,
+      "title": "Improve animations",
+      "description": "Smooth transitions",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 69,
+      "title": "Create API docs",
+      "description": "Developer guide",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 70,
+      "title": "Fix upload bug",
+      "description": "File not saving",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 71,
+      "title": "Add calendar view",
+      "description": "Task scheduling",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 72,
+      "title": "Improve forms UX",
+      "description": "Better validation",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 73,
+      "title": "Create notifications panel",
+      "description": "User alerts UI",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 74,
+      "title": "Fix tooltip bug",
+      "description": "Position issue",
+      "column": "inProgress",
+      "priority": "low"
+    },
+    {
+      "id": 75,
+      "title": "Add sharing feature",
+      "description": "Share tasks",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 76,
+      "title": "Optimize queries",
+      "description": "Database speed",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 77,
+      "title": "Create team page",
+      "description": "User groups",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 78,
+      "title": "Fix permissions bug",
+      "description": "Access issue",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 79,
+      "title": "Add comments editing",
+      "description": "Update messages",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 80,
+      "title": "Improve API security",
+      "description": "Rate limiting",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 81,
+      "title": "Add favorites",
+      "description": "Bookmark tasks",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 82,
+      "title": "Fix date formatting",
+      "description": "Locale issue",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 83,
+      "title": "Add undo feature",
+      "description": "Revert actions",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 84,
+      "title": "Improve onboarding UX",
+      "description": "Better flow",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 85,
+      "title": "Create backup system",
+      "description": "Data safety",
+      "column": "backlog",
+      "priority": "high"
+    },
+    {
+      "id": 86,
+      "title": "Fix drag issue",
+      "description": "Column movement bug",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 87,
+      "title": "Add activity feed",
+      "description": "Recent actions",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 88,
+      "title": "Optimize rendering",
+      "description": "Reduce re-renders",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 89,
+      "title": "Add bulk actions",
+      "description": "Multi-select tasks",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 90,
+      "title": "Fix filter bug",
+      "description": "Wrong results",
+      "column": "inProgress",
+      "priority": "medium"
+    },
+    {
+      "id": 91,
+      "title": "Add keyboard navigation",
+      "description": "Accessibility",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 92,
+      "title": "Improve performance",
+      "description": "General optimizations",
+      "column": "done",
+      "priority": "high"
+    },
+    {
+      "id": 93,
+      "title": "Create logs dashboard",
+      "description": "System logs UI",
+      "column": "backlog",
+      "priority": "medium"
+    },
+    {
+      "id": 94,
+      "title": "Fix UI glitch",
+      "description": "Random flicker",
+      "column": "inProgress",
+      "priority": "low"
+    },
+    {
+      "id": 95,
+      "title": "Add audit trail",
+      "description": "Track changes",
+      "column": "review",
+      "priority": "medium"
+    },
+    {
+      "id": 96,
+      "title": "Update UI theme",
+      "description": "Modern design",
+      "column": "done",
+      "priority": "low"
+    },
+    {
+      "id": 97,
+      "title": "Add export CSV",
+      "description": "Download option",
+      "column": "backlog",
+      "priority": "low"
+    },
+    {
+      "id": 98,
+      "title": "Fix crash on load",
+      "description": "App startup issue",
+      "column": "inProgress",
+      "priority": "high"
+    },
+    {
+      "id": 99,
+      "title": "Add help tooltips",
+      "description": "Guided UI",
+      "column": "review",
+      "priority": "low"
+    },
+    {
+      "id": 100,
+      "title": "Finalize release",
+      "description": "Prepare production",
+      "column": "done",
+      "priority": "high"
+    }
+  ]
+}
