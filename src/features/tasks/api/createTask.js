@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const createTask = async ({data, status}) => {console.log(data)
+export const createTask = async ({data}) => {
     try {
         const res = await axios.post(`http://localhost:3000/tasks/`, data);
         return {

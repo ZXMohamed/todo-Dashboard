@@ -4,7 +4,7 @@ import EditForm from './editForm'
 import useFormsState from '../../hook/useFormsState';
 
 function Forms() {
-    const { forms } = useFormsState();console.log(forms);
+    const { forms } = useFormsState();
     return (
         <>
             { forms.create.show && <CreateForm /> }

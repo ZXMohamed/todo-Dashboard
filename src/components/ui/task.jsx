@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { Box, CardContent, IconButton, Stack, Typography } from '@mui/material'
 import PriorityBadge from './priorityBadge'
 import clsx from 'clsx'
-import { DeleteIcon, Edit, Trash } from 'lucide-react'
+import { Edit, Trash } from 'lucide-react'
 
 function Task({ id="", title="", description="", priorityTitle = "", priority = "",status="", onDelete = () => { }, onEdit = () => { }, className = "" }) {
     return (

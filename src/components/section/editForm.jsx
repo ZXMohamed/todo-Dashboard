@@ -1,5 +1,5 @@
 import { Box, Button, MenuItem, TextField, Typography } from '@mui/material';
-import React, { use, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import useFormsState from '../../hook/useFormsState';
 import { X } from 'lucide-react';
@@ -9,7 +9,7 @@ import useEditTask from '../../hook/useEditTask';
 
 function EditForm() {
 
-  const { forms, openEditForm } = useFormsState();console.log(forms);
+  const { forms, openEditForm } = useFormsState();
 
   const { isError, isSuccess, isPending, mutate } = useEditTask();
 

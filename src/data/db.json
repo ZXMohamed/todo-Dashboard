@@ -4,7 +4,7 @@
       "id": 2,
       "title": "2Design homepage",
       "description": "Include hero section",
-      "column": "backlog",
+      "column": "inProgress",
       "priority": "low"
     },
     {
@@ -23,27 +23,6 @@
     },
     {
       "id": 8,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
-      "id": 9,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
-      "id": 10,
-      "title": "3Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
-    },
-    {
-      "id": 13,
       "title": "3Design homepage",
       "description": "Include hero section",
       "column": "backlog",
@@ -111,6 +90,13 @@
       "priority": "low",
       "column": "done",
       "id": 27
+    },
+    {
+      "title": "vvc",
+      "description": "vfvgvg",
+      "priority": "low",
+      "column": "inProgress",
+      "id": 28
     }
   ]
 }

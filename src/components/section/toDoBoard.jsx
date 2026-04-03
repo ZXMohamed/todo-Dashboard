@@ -3,22 +3,18 @@ import StatusColumn from '../ui/statusColumn'
 import { Box, Grid } from '@mui/material'
 import useGetTasks from '../../hook/useGetTasks';
 import constValues from '../../data/constValues';
-import useFormsState from '../../hook/useFormsState';
 
 function ToDoBoard({searchQuery}) {
-//$get search parameter from url
 
     const { data: backlogData, dataList: backlogList, fetchNextPage: backlogFetchNextPage, hasNextPage: backlogHasNextPage, isFetchingNextPage: backlogIsFetchingNextPage, error: backlogError, isError: backlogIsError, isLoading: backlogIsLoading, isSuccess:backlogIsSuccess} = useGetTasks({column:constValues.columns.backlog, limit: constValues.columnsLoadLimit, searchQuery });
     const { data: inProgressData, dataList: inProgressList, fetchNextPage: inProgressFetchNextPage, hasNextPage: inProgressHasNextPage, isFetchingNextPage: inProgressIsFetchingNextPage, error: inProgressError, isError: inProgressIsError, isLoading: inProgressIsLoading, isSuccess:inProgressIsSuccess} = useGetTasks({column:constValues.columns.inProgress, limit: constValues.columnsLoadLimit, searchQuery });
     const { data: reviewData, dataList: reviewList, fetchNextPage: reviewFetchNextPage, hasNextPage: reviewHasNextPage, isFetchingNextPage: reviewIsFetchingNextPage, error: reviewError, isError: reviewIsError, isLoading: reviewIsLoading, isSuccess:reviewIsSuccess} = useGetTasks({column:constValues.columns.review, limit: constValues.columnsLoadLimit, searchQuery });
     const { data: doneData, dataList: doneList, fetchNextPage: doneFetchNextPage, hasNextPage: doneHasNextPage, isFetchingNextPage: doneIsFetchingNextPage, error: doneError, isError: doneIsError, isLoading: doneIsLoading, isSuccess:doneIsSuccess} = useGetTasks({column:constValues.columns.done, limit: constValues.columnsLoadLimit, searchQuery });
-   
-    // console.log(backlogList, inProgressList, reviewList, doneList);
-    
+  
 
     return (
         <Box>
-            <Grid container spacing={3} className="h-[100vh] pt-10 px-6 pb-0">
+            <Grid container spacing={3} className="h-[100vh] sm:pt-10 px-1 sm:px-6 pb-0">
                 <Grid size={ { xs: 12, sm: 6, lg: 4, xl: 3 } }>
                     <StatusColumn tasks={ backlogList } itemsCount={ backlogData?.pages[0]?.total } title='backlog'isSuccess={backlogIsSuccess} isError={ backlogIsError } error={backlogError} isLoading = {backlogIsLoading}  isFetching={ backlogIsFetchingNextPage } hasNext={ backlogHasNextPage } loadMore={ backlogFetchNextPage } status={constValues.columns.backlog } />
                 </Grid>

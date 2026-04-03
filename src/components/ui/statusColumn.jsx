@@ -6,14 +6,9 @@ import clsx from 'clsx'
 import useDeleteTask from '../../hook/useDeleteTask'
 import toast from 'react-hot-toast'
 import useFormsState from '../../hook/useFormsState'
-// import { deleteTask } from '../../features/tasks/api/deleteTask'
 
 
 function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSuccess=false,isError=false,error={}, isLoading=false, isFetching=false, itemsCount = 0, title = "", status = "backlog",className="" }) {
-    
-  //$open add form
-  //$dnd
-  console.log(status);
 
   const {openEditForm,openCreateForm}= useFormsState();
 

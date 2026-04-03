@@ -9,8 +9,8 @@ function ToDoSearchBoard() {
     return (
         <>
             <section className='p-5 flex gap-2 items-center'>
-                <div className='rounded-2xl bg-primary w-12 h-12 flex justify-center items-center'><SearchIcon size={ 30 } className='text-accent'/></div>
-                <h2 component={"h2"} className='text-primary font-light'>Search About : { searchQuery }</h2>
+                <div className='rounded-2xl bg-primary max-sm:scale-80 w-12 h-12 flex justify-center items-center'><SearchIcon size={ 30 } className='text-accent'/></div>
+                <h2 component={"h2"} className='text-primary font-light max-md:text-[20px]'>Search About : { searchQuery }</h2>
             </section>
             
             <ToDoBoard searchQuery={ searchQuery } />

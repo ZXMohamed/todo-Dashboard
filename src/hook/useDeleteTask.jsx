@@ -7,7 +7,7 @@ function useDeleteTask() {
 
   return useMutation({
     mutationFn: deleteTask,
-    onSuccess: (data,variables) => {console.log(variables.id,variables.status);
+    onSuccess: (data,variables) => {
       queryClient.invalidateQueries({ queryKey: ['tasks',variables.status] });
     },
   });

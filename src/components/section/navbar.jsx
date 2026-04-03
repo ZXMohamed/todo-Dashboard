@@ -13,7 +13,7 @@ function Navbar() {
   const { data:tasksData } = useGetTasks({limit: 1,searchQuery });
 
   return (
-    <nav className='flex items-center justify-between py-4 px-6 border-b border-primary-border'>
+    <nav className='flex items-center justify-between max-md:flex-wrap py-4 px-2 sm:px-6 border-b border-primary-border'>
         <Box component={"section"} className='flex items-center gap-4'>
             <Box className='p-2 bg-primary text-accent rounded-lg'>
                 <Grid2x2/>

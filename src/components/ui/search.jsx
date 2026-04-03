@@ -21,14 +21,13 @@ function Search() {
     }
 
     return (
-      <Box component={"section"} className='flex items-center gap-2 focus-within:[&>button]:block'>
+      <Box component={"section"} className='flex items-center max-sm:flex-wrap gap-2 focus-within:[&>button]:block max-sm:py-2'>
         <button onClick={()=>handleSearchByPriority("high")}><PriorityBadge title={"High"} variant={"high"}/></button>
         <button onClick={()=>handleSearchByPriority("medium")}><PriorityBadge title={ "medium" } variant={ "medium" } /></button>
         <button onClick={()=>handleSearchByPriority("low")}><PriorityBadge title={ "low" } variant={ "low" } /></button>
         
-            
         <FormControl variant="standard">
-            <OutlinedInput inputRef={searchInputRef} className='h-10 w-[300px] text-[14px]!' placeholder='Search tasks...'
+            <OutlinedInput inputRef={searchInputRef} className='max-sm:w-full h-10 w-[300px] text-[14px]!' placeholder='Search tasks...'
                 startAdornment={
                     <InputAdornment position="start">
                         <SearchIcon size={20}/>

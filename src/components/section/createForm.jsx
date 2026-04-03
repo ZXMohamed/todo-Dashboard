@@ -31,7 +31,6 @@ function CreateForm() {
   return (
     <div className="p-5 max-w-[600px]">
       <Box component={"section"} className='flex items-center justify-between gap-4 mb-10' >
-        {/* <div className='w-3 h-3 rounded-full' style={{backgroundColor:`var(--color-${forms.create.status})`}}></div> */}
         <Typography variant="h2">Create From</Typography>
         <Button onClick={()=>{openCreateForm(false)}} ><X /></Button>          
       </Box>
