@@ -4,10 +4,10 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 
 
 
-function useGetTasks({ column, limit = 5 }) {
+function useGetTasks({ column, limit = 5, searchQuery }) {
 
     const controls = useInfiniteQuery({
-        queryKey: ["tasks",column,limit],
+        queryKey: ["tasks",column,limit,searchQuery],
         queryFn: getTasks,
         getNextPageParam: (lastPage) => lastPage.hasMore ? lastPage.nextPage : undefined,
     });

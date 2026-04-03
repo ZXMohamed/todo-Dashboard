@@ -30,12 +30,12 @@ const theme = createTheme({
 
     typography: {
         fontFamily: 'roboto, sans-serif',
-        h1: { fontSize: '36px', fontFamily: 'roboto' },
-        h2: { fontSize: '24px', fontFamily: 'roboto' },
-        h3: { fontSize: '18px', fontFamily: 'roboto' },
-        h4: { fontSize: '16px', fontFamily: 'roboto' },
-        h5: { fontSize: '14px', fontFamily: 'roboto' },
-        h6: { fontSize: '12px', fontFamily: 'roboto' },
+        h1: { fontSize: '36px', fontFamily: 'roboto, sans-serif' },
+        h2: { fontSize: '24px', fontFamily: 'roboto, sans-serif' },
+        h3: { fontSize: '18px', fontFamily: 'roboto, sans-serif' },
+        h4: { fontSize: '16px', fontFamily: 'roboto, sans-serif' },
+        h5: { fontSize: '14px', fontFamily: 'roboto, sans-serif' },
+        h6: { fontSize: '12px', fontFamily: 'roboto, sans-serif' },
     },
 
     breakpoints: {

@@ -3,10 +3,14 @@ import { Grid2x2 } from 'lucide-react'
 import React from 'react'
 import Search from '../ui/search'
 import useGetTasks from '../../hook/useGetTasks';
+import { Link, useSearchParams } from 'react-router-dom';
 
 function Navbar() {
 
-  const { data:tasksData } = useGetTasks({limit: 1 });
+  const [searchParams] = useSearchParams();
+  const searchQuery = searchParams.get("searchQuery") || "";
+
+  const { data:tasksData } = useGetTasks({limit: 1,searchQuery });
 
   return (
     <nav className='flex items-center justify-between py-4 px-6 border-b border-primary-border'>
@@ -15,7 +19,7 @@ function Navbar() {
                 <Grid2x2/>
             </Box>
             <Stack className='flex flex-col'>
-                <h1 className='text-[16px]'>KANBAN BOARD</h1>
+                <Link to={"/"}><h1 className='text-[16px]'>KANBAN BOARD</h1></Link>
                 <p className='text-[12px]'>{tasksData?.pages[0]?.total??0} tasks</p>
             </Stack>
         </Box>
