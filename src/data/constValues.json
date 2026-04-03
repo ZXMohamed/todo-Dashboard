@@ -1,0 +1,9 @@
+{
+    "columns":{
+        "backlog":"backlog",
+        "inProgress":"inProgress",
+        "review":"review",
+        "done":"done"
+    },
+    "columnsLoadLimit":10
+}

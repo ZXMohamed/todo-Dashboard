@@ -2,8 +2,12 @@ import { Box, Stack } from '@mui/material'
 import { Grid2x2 } from 'lucide-react'
 import React from 'react'
 import Search from '../ui/search'
+import useGetTasks from '../../hook/useGetTasks';
 
 function Navbar() {
+
+  const { data:tasksData } = useGetTasks({limit: 1 });
+
   return (
     <nav className='flex items-center justify-between py-4 px-6 border-b border-primary-border'>
         <Box component={"section"} className='flex items-center gap-4'>
@@ -12,7 +16,7 @@ function Navbar() {
             </Box>
             <Stack className='flex flex-col'>
                 <h1 className='text-[16px]'>KANBAN BOARD</h1>
-                <p className='text-[12px]'>10 tasks</p>
+                <p className='text-[12px]'>{tasksData?.pages[0]?.total??0} tasks</p>
             </Stack>
         </Box>
         <Search/>
