@@ -1,13 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "title": "1Design homepage",
-      "description": "Include hero section",
-      "column": "backlog",
-      "priority": "heigh"
-    },
-    {
       "id": 2,
       "title": "2Design homepage",
       "description": "Include hero section",
@@ -20,13 +13,6 @@
       "description": "Include hero section",
       "column": "done",
       "priority": "low"
-    },
-    {
-      "id": 5,
-      "title": "Design homepage",
-      "description": "Include hero section",
-      "column": "inProgress",
-      "priority": "heigh"
     },
     {
       "id": 6,
@@ -67,8 +53,8 @@
       "id": 15,
       "title": "3Design homepage",
       "description": "Include hero section",
-      "column": "backlog",
-      "priority": "low"
+      "column": "done",
+      "priority": "medium"
     },
     {
       "id": 16,
@@ -99,23 +85,16 @@
       "priority": "low"
     },
     {
-      "title": "asd",
-      "description": "dasd",
-      "priority": "medium",
-      "column": "backlog",
-      "id": 22
-    },
-    {
       "title": "dsfdsf",
       "description": "",
       "priority": "low",
-      "column": "inProgress",
+      "column": "review",
       "id": 23
     },
     {
       "title": "asd",
       "description": "dasd",
-      "priority": "medium",
+      "priority": "high",
       "column": "review",
       "id": 24
     },

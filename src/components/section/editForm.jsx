@@ -9,7 +9,7 @@ import useEditTask from '../../hook/useEditTask';
 
 function EditForm() {
 
-  const { forms, openEditForm } = useFormsState();
+  const { forms, openEditForm } = useFormsState();console.log(forms);
 
   const { isError, isSuccess, isPending, mutate } = useEditTask();
 
@@ -32,6 +32,7 @@ function EditForm() {
       title: forms.edit.data?.data?.title ?? "",
       description: forms.edit.data?.data?.description ?? "",
       priority: forms.edit.data?.data?.priority ?? "",
+      column: forms.edit.data?.status ?? "",
     },
   });
 
@@ -39,10 +40,11 @@ function EditForm() {
     setValue("title", forms.edit.data?.data?.title ?? "");
     setValue("description", forms.edit.data?.data?.description ?? "");
     setValue("priority", forms.edit.data?.data?.priority ?? "");
+    setValue("column", forms.edit.data?.status ?? "");
   }, [forms.edit.data, setValue]);
 
   const onSubmit = (data) => {
-    mutate({id:forms.edit.data.id, data:{ ...data, column: forms.edit.data.status }, status:forms.edit.data.status});
+    mutate({id:forms.edit.data.id, data:{ ...data }, status:forms.edit.data?.status});
   };
 
   return (
@@ -58,9 +60,16 @@ function EditForm() {
           <TextField multiline variant='filled' label="Description" rows={3} {...register("description")} />
 
           <TextField select label="Priority" defaultValue={forms.edit.data?.data?.priority ?? ""} {...register("priority", { required: "Priority is required" })} error={!!errors.priority} helperText={errors.priority?.message}>
-              <MenuItem value={constValues.priority["low"]} className='bg-low/50!'>Low</MenuItem>
-              <MenuItem value={constValues.priority["medium"]} className='bg-medium/50!'>Medium</MenuItem>
-              <MenuItem value={constValues.priority["high"]} className='bg-high/50!'>High</MenuItem>
+              <MenuItem value={constValues.priority.low} className='bg-low/50!'>Low</MenuItem>
+              <MenuItem value={constValues.priority.medium} className='bg-medium/50!'>Medium</MenuItem>
+              <MenuItem value={constValues.priority.high} className='bg-high/50!'>High</MenuItem>
+          </TextField>
+         
+          <TextField select label="Status" defaultValue={forms.edit.data?.status ?? ""} {...register("column", { required: "Status is required" })} error={!!errors.column} helperText={errors.column?.message}>
+              <MenuItem value={constValues.columns.backlog} className='bg-backlog/50!'>Backlog</MenuItem>
+              <MenuItem value={constValues.columns.inProgress} className='bg-inProgress/50!'>In progress</MenuItem>
+              <MenuItem value={constValues.columns.review} className='bg-review/50!'>Review</MenuItem>
+              <MenuItem value={constValues.columns.done} className='bg-done/50!'>Done</MenuItem>
           </TextField>
 
           <Button type="submit" variant="contained" loading={isPending} style={{backgroundColor:`var(--color-${forms.edit.data.status})`}}>Edit</Button>

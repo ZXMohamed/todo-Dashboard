@@ -101,26 +101,4 @@
         font-family: "roboto, sans-serif";
         font-size: 16px;
     }
-
-    .dark{
-        --color-primary: #ffffff;
-        --color-secondary: #eef0f3;
-        --color-muted: #e8e9ed;
-
-        --color-low: #8e939d;
-        --color-medium: #dd8931;
-        --color-high: #cb3c3b;
-
-        --color-backlog: #3e66d7;
-        --color-inProgress: #dd882e;
-        --color-review: #904abf;
-        --color-done: #459a75;
-
-        --color-bg: #f5f6f8;
-        
-        --color-primary-text: #000000;
-        --color-muted-text: #9ea2aa;
-        
-        --color-primary-border: #ebecf0;
-    }
 }

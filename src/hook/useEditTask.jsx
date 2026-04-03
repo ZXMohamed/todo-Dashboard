@@ -9,6 +9,7 @@ function useEditTask() {
     mutationFn: editTask,
     onSuccess: (data,variables) => {
       queryClient.invalidateQueries({ queryKey: ['tasks',variables.status] });
+      queryClient.invalidateQueries({ queryKey: ['tasks',variables.data.column] });
     },
   });
   

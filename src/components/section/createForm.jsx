@@ -43,10 +43,9 @@ function CreateForm() {
 
           <TextField label="Priority" select defaultValue="" {...register("priority", { required: "Priority is required" })} error={!!errors.priority} helperText={errors.priority?.message}>
               <MenuItem value="">Select priority</MenuItem>
-              <MenuItem value={constValues.priority["low"]} className='bg-low/50!'>Low</MenuItem>
-              <MenuItem value={constValues.priority["medium"]} className='bg-medium/50!'>Medium</MenuItem>
-              <MenuItem value={constValues.priority["high"]} className='bg-high/50!'>High</MenuItem>
-
+              <MenuItem value={constValues.priority.low} className='bg-low/50!'>Low</MenuItem>
+              <MenuItem value={constValues.priority.medium} className='bg-medium/50!'>Medium</MenuItem>
+              <MenuItem value={constValues.priority.high} className='bg-high/50!'>High</MenuItem>
           </TextField>
 
           <Button type="submit" variant="contained" loading={isPending} style={{backgroundColor:`var(--color-${forms.create.status})`}}>Create</Button>
