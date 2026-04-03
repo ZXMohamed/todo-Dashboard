@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const createTask = async ({data}) => {
     try {
-        const res = await axios.post(`http://localhost:3000/tasks/`, data);
+        const res = await axios.post(`${import.meta.env.VITE_API_URL}/tasks/`, data);
         return {
             data: res.data,
         }

@@ -44,14 +44,19 @@ function EditForm() {
   }, [forms.edit.data, setValue]);
 
   const onSubmit = (data) => {
-    mutate({id:forms.edit.data.id, data:{ ...data }, status:forms.edit.data?.status});
+    mutate({ id: forms.edit.data.id, data: { ...data }, status: forms.edit.data?.status });
+    handleClose();
   };
+
+  const handleClose = () => { 
+    openEditForm(false,null)
+  }
 
   return (
     <Box className="p-5  max-w-[600px]">
       <section className='flex items-center justify-between mb-10'>
         <Typography variant="h2">Edit From</Typography>       
-        <Button onClick={()=>{openEditForm(false,null)}}><X/></Button>          
+        <Button onClick={handleClose}><X/></Button>          
       </section>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3">
           
