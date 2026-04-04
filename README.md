@@ -1,6 +1,3 @@
-# when open it from live link click allow to the popup so json-server can run
-
-# install
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
