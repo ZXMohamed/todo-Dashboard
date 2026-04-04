@@ -19,9 +19,9 @@ server.use(jsonServer.rewriter({
 
 server.use(router);
 
-server.listen(3000, () => { 
-  console.log('JSON Server is running on port 3000');
-});
+// server.listen(3000, () => { 
+//   console.log('JSON Server is running on port 3000');
+// });
 
 export default server;
 
@@ -62,8 +62,8 @@ export default server;
 //   '/api/*': '/$1'
 // }));
 // server.use(router);
-server.listen(3000, () => { 
-  console.log('JSON Server is running on port 3000');
-});
+// server.listen(3000, () => { 
+//   console.log('JSON Server is running on port 3000');
+// });
 
 // export default server;
