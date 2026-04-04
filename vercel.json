@@ -9,8 +9,19 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
+        "include":["db.json"],
         "distDir": "dist"
       }
+    }
+  ],
+  "routes":[
+    {
+      "src": "/api/(.*)",
+      "dest": "api/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "rewrites": [
