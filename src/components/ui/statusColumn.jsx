@@ -50,11 +50,11 @@ function StatusColumn({ tasks = [], loadMore = () => { }, hasNext=false,isSucces
         <Typography component="h2" className='text-[14px] uppercase'>{title}</Typography>
         <div className='rounded-full bg-muted w-[20px] h-[20px] flex justify-center items-center text-[12px]'>{ itemsCount }</div>
       </Box>
+      { isError && <Alert variant="filled" severity="error"> { error.message } </Alert> }
       <Stack onScroll={fetchOnScrollDown} className="max-h-[850px] overflow-y-scroll gap-2 px-1">
         { tasks?.map((task,index) => <Task key={index} status={status} id={task.id} title={ task.title } description={ task.description } priority={ task.priority} priorityTitle={task.priority} onDelete={handleDeleteTask} onEdit={handleEditTask}/>)}
       </Stack>
       { (isLoading || isFetching) && <CircularProgress enableTrackSlot size={ 40 } className='m-auto' /> }
-      { isError && <Alert variant="filled" severity="error"> { error.message } </Alert> }
       { isSuccess && <Button variant='outlined' color='primary' onClick={ handleCreateTask } className='capitalize!' ><Plus /> Add task</Button> }
     </Stack>
   )
